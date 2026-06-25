@@ -34,12 +34,12 @@ window.showTab = showTab;
 function adminLogin() {
     let password = prompt("관리자 비밀번호 입력");
 
-    if (password === "0727") {
+    if (password === "0727s") {
         isAdmin = true;
         alert("관리자 모드 활성화!");
         loadProducts();
     } else {
-        alert("비밀번호가 틀렸어요!");
+        alert("비밀번호가 틀렸어요!");ss
     }
 }
 
