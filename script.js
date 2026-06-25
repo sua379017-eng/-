@@ -34,7 +34,7 @@ window.showTab = showTab;
 function adminLogin() {
     let password = prompt("관리자 비밀번호 입력");
 
-    if (password === "0727s") {
+    if (password === "0727") {
         isAdmin = true;
         alert("관리자 모드 활성화!");
         loadProducts();
