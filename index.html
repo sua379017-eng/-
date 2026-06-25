@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>내 판매 사이트</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="menu">
+        <button onclick="showTab('buy')">구매 방법</button>
+        <button onclick="showTab('sell')">구매 가능</button>
+        <button onclick="showTab('sold')">품절</button>
+        <button onclick="showTab('sns')">SNS</button>
+        <button onclick="adminLogin()">관리자</button>
+    </div>
+
+    <!-- 구매 방법 -->
+    <div id="buy" class="tab">
+        <h2>구매 방법</h2>
+        <p>오픈채팅으로 문의해주세요!</p>
+    </div>
+
+    <!-- 판매중 -->
+    <div id="sell" class="tab" style="display:none;">
+        <div class="content">
+            <div class="box plus" id="plusBtn" onclick="addProduct()" style="display:none;">+</div>
+        </div>
+    </div>
+
+    <!-- 품절 -->
+    <div id="sold" class="tab" style="display:none;">
+        <h2>품절 상품</h2>
+    </div>
+
+    <!-- SNS -->
+    <div id="sns" class="tab" style="display:none;">
+        <h2>SNS</h2>
+        <p>틱톡: @example</p>
+        <p>유튜브: @example</p>
+    </div>
+
+    <script src="script.js?v=3"></script>
+
+</body>
+</html>
